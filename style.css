@@ -59,11 +59,8 @@ footer {
 
 
 .ghostbar {
-    flex: 1;
-    max-width: 500px;
-    min-width: 450px;
-    width: 500px;
-    height: 700px;
+    max-width: 400px;
+    height: 550px;
     background-color: #393E46;
     border-radius: 15px;
     padding: 30px;
@@ -83,7 +80,7 @@ footer {
     color: #EEEEEE;
     padding: 5px 0px;
     list-style: none;
-    font-size: 22px;
+    font-size: 17px;
 }
 
 .ghostbar span {
@@ -98,7 +95,47 @@ footer {
     color: #00ADB5;
 }
 
+/* Nightmare.Html */
 
+
+.nightmare-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* padding: 30px; */
+}
+
+.bar {
+    /* flex: 1; */
+    background-color: #393E46;
+    border-radius: 15px;
+    width: 600px;
+    height: 500px;
+    margin: 20px;
+    padding: 30px;
+}
+
+.bar > h1 {
+    color: #EEEEEE;
+    text-align: center;
+}
+
+.bar ul {
+    padding: 20px;
+    list-style: none;
+    font-size: x-large;
+    color: #EEEEEE;
+}
+
+.bar ul li {
+    padding: 5px 0px;
+}
+
+.bar ul li span{
+    color: #00ADB5;
+}
 
 
 @media (max-width: 1200px) {
@@ -109,8 +146,17 @@ footer {
         height: 120px;
     }
 
+    .title, .navbar {
+        width: 100%;
+    }
+
     .navbar {
         justify-content: space-evenly;
+    }
+
+    .navbar > a{
+        font-size: 1rem;
+        padding: 20px 20px;
     }
 
     .title {
@@ -128,7 +174,29 @@ footer {
     }
 
     .ghostbar {
-        width: 0;
-        min-width: fit-content;
+        /* width: 0; */
+        /* min-width: fit-content; */
+        max-width: 700px;
+        height: fit-content;
+    }
+
+    .ghostbar > ul > li {
+        font-size: 15px;
+    }
+
+    .bar {
+        height: fit-content;
+    }
+
+    .bar h1{
+        font-size: x-large;
+    }
+
+    .bar ul {
+        font-size: large;
+    }
+
+    footer {
+        font-size: 1.3rem;
     }
 }
